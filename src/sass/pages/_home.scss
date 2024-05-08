@@ -1,1 +1,211 @@
 /* home */
+$background-color: #1f1f1f;
+$blockquote-color: #343434;
+$text-color: #fffbf1;
+$header-color: #23b9da;
+$star-color: #e9b324;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,600;1,600&display=swap');
+
+$heading-font: "Rubik Mono One", monospace;
+$subheading-font: "Rubik", sans-serif;
+
+body {
+    max-width: 90vw;
+    padding: 0 1em;
+    line-height: 1.5;
+    color: $text-color;
+    background-color: $background-color;
+    margin-inline: auto;
+    width: fit-content;
+    font-size: clamp(1rem, 0.3882rem + 3.0588vw, 1.4rem);
+}
+
+p, h1, h2, h3, h4, a, li {
+    max-width: 75ch;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    margin-block: 10px;
+}
+
+a {
+    color: $text-color;
+    margin-inline: auto;
+}
+
+p a::before {
+    content: "🔗";
+}
+
+ul {
+    margin-inline: auto;
+    width: fit-content;
+    padding: 0px;
+}
+
+ul li {
+    background-color: $text-color;
+    color: $background-color;
+    margin: 10px;
+    padding: 1px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    transition: all .35s;
+}
+
+nav ul li:hover {
+    scale: 1.25;
+}
+
+.page-footer ul li a {
+    color: $background-color;
+}
+
+.page-footer ul li:hover {
+    scale: 1.25;
+}
+
+header p {
+    text-align: center;
+}
+
+p {
+    margin-inline: auto;
+}
+
+header h1, header h2 {
+    color: $header-color;
+}
+
+h1 {
+    font-family: $heading-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(2rem, 1.2941rem + 3.5294vw, 3.1rem);
+}
+
+h2 {
+    font-family: $subheading-font;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.8rem, 1.2941rem + 3.5294vw, 2.8rem);
+}
+
+h3 {
+    font-family: $subheading-font;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.7rem, 1.2941rem + 3.5294vw, 2.6rem);
+}
+
+h4 {
+    font-family: $subheading-font;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.6rem, 1.2941rem + 3.5294vw, 2.4rem);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $star-color;
+    line-height: 1.1;
+    margin-block: 50px 10px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+blockquote {
+    background-color: $blockquote-color;
+    border-radius: 10px;
+    padding: 15px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+blockquote p {
+    margin: 0 !important;
+}
+
+.container {
+    text-align: center;
+}
+
+.container p, .container a, .container li {
+    text-align: left;
+}
+
+footer .container p {
+    text-align: center;
+}
+
+header .container p {
+    text-align: center;
+}
+
+.container p:first-of-type {
+    margin-block-start: 10px;
+}
+
+footer {
+    margin-block-end: 30px;
+}
+
+:where(ul, ol) {
+    list-style-position: inside;
+}
+
+ol {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+ol li {
+    margin: 10px;
+}
+
+svg {
+    width: 15px;
+    height: 15px;
+    fill: $star-color;
+}
+
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+}
+
+.container h1,
+.container h2 {
+    text-align: center;
+    margin-inline: auto;
+}
+
+@media (prefers-reduced-motion) {
+    .page-footer ul li:hover {
+        scale: 1;
+    }
+
+    nav ul li:hover {
+        scale: 1;
+    }
+}
