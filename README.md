@@ -55,6 +55,8 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 
 ### Resources
 
+[CSS Reset from Andy Bell](https://piccalil.li/blog/a-more-modern-css-reset/)
+
 [Link emoji idea](https://developer.mozilla.org/en-US/docs/Web/CSS/::before)
 
 [HTML Content from Style Stage by Stephanie Eckles](https://stylestage.dev)
